@@ -1,0 +1,7 @@
+<%= link_to 'New Appearance', new_appearance_path %>
+<% @appearances.each do |app| %>
+  <p>Guest: <%= app.guest.name %></p>
+  <p>Date: <%= app.episode.date %></p>
+  <p>Rating: <%= app.rating %></p>
+  <%= link_to "Go To Appearance", app %>
+<% end %>

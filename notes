@@ -1,0 +1,12 @@
+3:
+  schema: updated
+  user model: updated
+  appearance model: updated
+  forms: ???
+
+extra stuff
+- "gating" (?) for appearances => only user logged in should be able to access/edit
+- navbar partial
+- migrate stevens way (yeah no)
+- change root
+- redirect after login to intended target

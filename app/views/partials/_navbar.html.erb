@@ -1,0 +1,9 @@
+<div style="display:inline"> <%= link_to 'All Guests', guests_path %> </div>
+<div style="display:inline"> <%= link_to 'All Episodes', episodes_path %> </div>
+<div style="display:inline"> <%= link_to 'All Appearances', appearances_path %> </div>
+<% if session[:user_id] %>
+  <div style="display:inline"> <%= link_to 'Logout', logout_path, :method => :delete %> </div>
+<% else %>
+  <div style="display:inline"> <%= link_to 'Login', login_path %> </div>
+<% end %>
+<br><br>

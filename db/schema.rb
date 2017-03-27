@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170310161315) do
+ActiveRecord::Schema.define(version: 20170327175146) do
 
   create_table "appearances", force: :cascade do |t|
     t.integer  "rating"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20170310161315) do
     t.integer  "episode_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
     t.index ["episode_id"], name: "index_appearances_on_episode_id"
     t.index ["guest_id"], name: "index_appearances_on_guest_id"
   end
@@ -28,7 +29,6 @@ ActiveRecord::Schema.define(version: 20170310161315) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
 
   create_table "guests", force: :cascade do |t|
     t.string   "name"
